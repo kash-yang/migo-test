@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">MigoTest</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="main_fragment_label">Pass List</string>
+    <string name="detail_fragment_label">Pass Detail</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="header_day">DAY PASS</string>
+    <string name="header_hour">HOUR PASS</string>
+    <string name="item_day">%1$s DAY PASS</string>
+    <string name="item_hour">%1$s HOUR PASS</string>
+    <string name="item_secondary">Rp %1$s</string>
+    <string name="price">Price in Rp</string>
+    <string name="pass_length">Pass length</string>
+    <string name="add_pass_dialog_title">Pass length</string>
+    <string name="error_with_message">Error: %1$s</string>
+    <string name="detail_type">Type: %1$s</string>
+    <string name="detail_length">Length: %1$s</string>
+    <string name="detail_price">Price: %1$s</string>
+    <string name="detail_generate_at">Generate At: %1$s</string>
+    <string name="detail_active_at">Activate At: %1$s</string>
+    <string name="detail_expired_at">Expired At: %1$s</string>
+    <string name="detail_expired">Expired: %1$s</string>
+    <string name="buy">Buy</string>
+
+    <string-array name="pass_type_array">
+        <item>DAY</item>
+        <item>HOUR</item>
+    </string-array>
+
+</resources>
