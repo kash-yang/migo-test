@@ -1,4 +1,4 @@
-package tv.migo.test
+package tv.migo.test.ui
 
 
 import android.os.Bundle
@@ -27,7 +27,7 @@ import tv.migo.test.ui.viewmodel.PassViewModel
 import tv.migo.test.utils.Resource
 import tv.migo.test.utils.Status
 import android.text.method.PasswordTransformationMethod
-import android.util.Log
+import tv.migo.test.R
 
 
 @AndroidEntryPoint
