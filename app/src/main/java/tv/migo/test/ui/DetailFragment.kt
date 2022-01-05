@@ -1,4 +1,4 @@
-package tv.migo.test
+package tv.migo.test.ui
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.navArgs
+import tv.migo.test.R
 import tv.migo.test.databinding.FragmentDetailBinding
 import tv.migo.test.db.data.PassType
 import tv.migo.test.db.entity.isExpired
