@@ -11,7 +11,7 @@ import tv.migo.test.api.interceptor.DynamicBaseURLInterceptor
 import java.util.concurrent.TimeUnit
 
 class RetrofitServiceGenerator(private val migoApplication: MigoApplication) {
-    private val moshConverterFactory = MoshiConverterFactory
+    private val moshiConverterFactory = MoshiConverterFactory
         .create(MoshiProvider.moshi)
 
     private val loggingIntercept = HttpLoggingInterceptor(object : HttpLoggingInterceptor.Logger {
@@ -51,7 +51,7 @@ class RetrofitServiceGenerator(private val migoApplication: MigoApplication) {
 
     private val retrofitBuilder = Retrofit.Builder().apply {
         baseUrl(BuildConfig.MIGO_PUBLIC_API_SERVER)
-        addConverterFactory(moshConverterFactory)
+        addConverterFactory(moshiConverterFactory)
         client(httpClient.build())
     }
 

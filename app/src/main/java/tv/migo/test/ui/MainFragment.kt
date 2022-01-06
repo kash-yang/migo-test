@@ -2,6 +2,7 @@ package tv.migo.test.ui
 
 
 import android.os.Bundle
+import android.text.method.PasswordTransformationMethod
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -18,6 +19,7 @@ import com.google.android.material.textfield.TextInputEditText
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
+import tv.migo.test.R
 import tv.migo.test.databinding.FragmentMainBinding
 import tv.migo.test.db.data.PassType
 import tv.migo.test.db.entity.PassInfo
@@ -26,8 +28,6 @@ import tv.migo.test.ui.adapter.PassItemClickListener
 import tv.migo.test.ui.viewmodel.PassViewModel
 import tv.migo.test.utils.Resource
 import tv.migo.test.utils.Status
-import android.text.method.PasswordTransformationMethod
-import tv.migo.test.R
 
 
 @AndroidEntryPoint
