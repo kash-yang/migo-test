@@ -1,11 +1,8 @@
 package tv.migo.test.ui.viewmodel
 
-import android.util.Log
 import androidx.lifecycle.ViewModel
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.flow
-import tv.migo.test.api.services.MigoStatusService
 import tv.migo.test.db.data.PassType
 import tv.migo.test.db.entity.PassInfo
 import tv.migo.test.usecase.ActivatePassUseCase

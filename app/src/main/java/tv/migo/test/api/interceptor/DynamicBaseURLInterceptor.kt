@@ -3,7 +3,6 @@ package tv.migo.test.api.interceptor
 import android.content.Context
 import android.net.ConnectivityManager
 import android.net.NetworkCapabilities.TRANSPORT_WIFI
-import android.util.Log
 import okhttp3.Interceptor
 import okhttp3.Request
 import okhttp3.Response
@@ -15,8 +14,6 @@ class DynamicBaseURLInterceptor(private val application: MigoApplication) : Inte
         application.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
     override fun intercept(chain: Interceptor.Chain): Response {
         val network = application.currentNetwork
-        Log.i("Kash", "${application.currentNetworkCapabilities}")
-        Log.i("Kash", "${application.currentNetworkCapabilities?.hasTransport(TRANSPORT_WIFI)}")
         return when (application.currentNetworkCapabilities?.hasTransport(TRANSPORT_WIFI)) {
             true -> {
                 connectivityManager.bindProcessToNetwork(network)
